@@ -1,8 +1,7 @@
-import path from "path";
 import { paths } from "./config";
 import createResolver from "postcss-import-webpack-resolver";
 
-export default {
+module.exports = {
   plugins: {
     "postcss-import": {
       resolve: createResolver({

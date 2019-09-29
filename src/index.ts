@@ -1,4 +1,5 @@
 import 'reflect-metadata';
+import './css/global.css';
 import { run } from '~/runtime';
 import { REACT_APP } from '~/consts';
 import { ReactApp } from '~/stores/react-app';

@@ -1,0 +1,54 @@
+@import "./modules/typography.css";
+@import "./modules/colors.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	line-height: var(--line-height);
+
+	color: var(--black);
+	background: var(--white);
+	word-wrap: var(--word-wrap);
+}
+
+body:before {
+  content: "Mobile";
+  display: none;
+  visibility: hidden;
+}
+
+@media (--mini-tablet) {
+  body:before {
+    content: "--mini-tablet";
+  }
+}
+
+@media (--tablet) {
+  body:before {
+    content: "--tablet";
+  }
+}
+
+@media (--desktop) {
+  body:before {
+    content: "--desktop";
+  }
+}
+
+@media (--large) {
+  body:before {
+    content: "--large";
+  }
+}
