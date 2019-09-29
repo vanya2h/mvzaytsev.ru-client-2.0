@@ -1,0 +1,31 @@
+@import "~/css/modules/typography.css";
+
+.heading {
+  margin: 0;
+	padding: 0;
+}
+
+.header-1 {
+	font-size: var(--h1-font-size);
+}
+
+.header-2 {
+	font-size: var(--h2-font-size);
+}
+
+.header-3 {
+	font-size: var(--h3-font-size);
+}
+
+.header-4 {
+	font-size: var(--h4-font-size);
+}
+
+.header-5 {
+	font-size: var(--h5-font-size);
+}
+
+.header-6 {
+  font-size: var(--h6-font-size);
+}
+

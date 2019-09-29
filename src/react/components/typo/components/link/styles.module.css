@@ -1,0 +1,13 @@
+@import "~/css/modules/colors.css";
+
+.link {
+  color: var(--blue);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.link:hover,
+.link:focus {
+	text-decoration: underline;
+}
