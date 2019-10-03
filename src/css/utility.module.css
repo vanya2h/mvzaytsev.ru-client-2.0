@@ -1,0 +1,20 @@
+@import "./modules/colors.css";
+
+.bigger {
+	font-size: 110%;
+}
+
+.blindness {
+	color: var(--black);
+	background: var(--white);
+}
+
+.horizontal-menu {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.horizontal-menu > * + * {
+	margin-left: 1rem;
+}
+

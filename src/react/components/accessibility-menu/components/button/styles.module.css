@@ -1,0 +1,35 @@
+@import "~/css/modules/colors.css";
+
+.button {
+	display: block;
+	min-width: 35px;
+	height: 35px;
+	padding: 0 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+	border-radius: 30rem;
+	font-size: 0.95rem;
+	background: color(var(--yellow) a(30%));
+}
+
+.button:focus {
+	outline: none;
+}
+
+.button.button--big {
+	font-size: 1.3rem;
+}
+
+.button.button--round {
+	width: 35px;
+	height: 35px;
+	padding: 0;
+}
+
+.button.button--active {
+	background: color(var(--yellow) a(70%)) !important;
+}

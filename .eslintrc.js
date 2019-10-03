@@ -12,6 +12,7 @@ module.exports = {
 			'code': 100,
 			'tabWidth': 2
 		}],
-		"import/no-extraneous-dependencies": [2, {"devDependencies": ["webpack/**/*", "index.js", "dev.server.js"]}]
+		"import/no-extraneous-dependencies": [2, {"devDependencies": ["webpack/**/*", "index.js", "dev.server.js"]}],
+		"@typescript-eslint/no-use-before-define": 0,
 	}
 }

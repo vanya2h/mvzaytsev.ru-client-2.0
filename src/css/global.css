@@ -2,7 +2,7 @@
 @import "./modules/colors.css";
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *,
@@ -15,11 +15,10 @@ body {
 	margin: 0;
 
 	font-family: var(--font-family);
-	font-size: var(--font-size);
 	line-height: var(--line-height);
-
+	font-size: var(--font-size);
+	background: color(var(--yellow) a(5%));
 	color: var(--black);
-	background: var(--white);
 	word-wrap: var(--word-wrap);
 }
 
@@ -51,4 +50,21 @@ body:before {
   body:before {
     content: "--large";
   }
+}
+
+@-webkit-keyframes autofill {
+	to {
+		color: inherit;
+		background: transparent;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
+
+ul, ol {
+	margin: 0;
+	list-style-type: none;
 }
