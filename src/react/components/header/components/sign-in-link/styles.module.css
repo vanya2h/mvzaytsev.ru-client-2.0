@@ -1,0 +1,15 @@
+@import "~/css/modules/colors.css";
+
+
+.text, .icon {
+	vertical-align: middle;
+}
+
+.wrapper, .wrapper:hover {
+	color: var(--black);
+}
+
+.icon {
+	margin-right: 1rem;
+	color: var(--yellow);
+}

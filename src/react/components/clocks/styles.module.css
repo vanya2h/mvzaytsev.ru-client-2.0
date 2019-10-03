@@ -1,0 +1,10 @@
+@import "~/css/modules/colors.css";
+
+.text, .icon {
+	vertical-align: middle;
+}
+
+.icon {
+	margin-right: 0.5rem;
+	color: var(--yellow);
+}
