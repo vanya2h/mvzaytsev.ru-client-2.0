@@ -1,8 +1,5 @@
 import React from 'react';
-import classnames from 'classnames';
-// import { Typo } from '~/react/components/typo';
 import { observer } from 'mobx-react-lite';
-import styles from './styles.module.css';
 import utility from '~/css/utility.module.css';
 import { useInjection } from '~/react/hooks/use-injection';
 import { FontSizeEnum, AccessibilityService } from '~/services/accessibility';
@@ -15,7 +12,7 @@ export const AccessibilityMenu = observer((): React.ReactElement => {
 
   return (
     <nav>
-      <ul className={classnames(styles['accessibility-menu'], utility['horizontal-menu'])}>
+      <ul className={utility['horizontal-menu']}>
         <li>
           <Button
             onClick={() => { accessibilityService.size = FontSizeEnum.Normal; }}
