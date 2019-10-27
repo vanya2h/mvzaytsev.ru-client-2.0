@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 // import { Typo } from '~/react/components/typo';
-import { IPage } from '~/interfaces/page';
+import { IPage } from "~/interfaces/page";
 
 export const ArticlePage: React.FunctionComponent & IPage = (): React.ReactElement => (
-  <div>
+	<div>
     Article
-  </div>
+	</div>
 );
 
 
-ArticlePage.displayName = 'ArticlePage';
+ArticlePage.displayName = "ArticlePage";
 
 ArticlePage.routeDescriptor = {
-  path: '/article',
-  component: ArticlePage,
-  key: 'article',
+	path: "/article",
+	component: ArticlePage,
+	key: "article",
 };

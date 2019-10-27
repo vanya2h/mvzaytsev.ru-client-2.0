@@ -1,20 +1,20 @@
-import React from 'react';
-import { Container } from 'inversify';
+import React from "react";
+import { Container } from "inversify";
 
 export const InversifyContext = React.createContext<{ container: Container | null }>({
-  container: null,
+	container: null,
 });
 
 interface IProps {
-  container: Container;
-  children?: React.ReactElement;
+	container: Container;
+	children?: React.ReactElement;
 }
 
 export const ContainerProvider = ({
-  container,
-  children,
+	container,
+	children,
 }: IProps): React.ReactElement => (
-  <InversifyContext.Provider value={{ container }}>
-    {children}
-  </InversifyContext.Provider>
+	<InversifyContext.Provider value={{ container }}>
+		{children}
+	</InversifyContext.Provider>
 );

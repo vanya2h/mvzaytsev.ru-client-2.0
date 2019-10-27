@@ -1,19 +1,16 @@
 @import "~/css/modules/colors.css";
 
 .button {
-	display: block;
-	min-width: 35px;
 	height: 35px;
-	padding: 0 1rem;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	cursor: pointer;
-	border-radius: 30rem;
 	font-size: 0.95rem;
-	background: color(var(--yellow) a(30%));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1rem;
+	background: var(--basic);
+	border-radius: 30rem;
+	cursor: pointer;
+	min-width: 35px;
 }
 
 .button:focus {
@@ -31,5 +28,6 @@
 }
 
 .button.button--active {
-	background: color(var(--yellow) a(70%)) !important;
+	color: var(--basic);
+	background: var(--secondary);
 }

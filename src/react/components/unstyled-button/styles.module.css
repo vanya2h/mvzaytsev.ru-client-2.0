@@ -1,19 +1,19 @@
 .unstyled-button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
+	width: auto;
+	color: inherit;
+	padding: 0;
+	margin: 0;
+	-webkit-appearance: none;
+	background: transparent;
+	border: none;
+	font: inherit;
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+	line-height: normal;
+	overflow: visible;
 }
 
 .unstyled-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+	padding: 0;
+	border: 0;
 }

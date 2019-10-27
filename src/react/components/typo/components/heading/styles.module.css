@@ -1,8 +1,8 @@
 @import "~/css/modules/typography.css";
 
 .heading {
-  margin: 0;
 	padding: 0;
+	margin: 0;
 }
 
 .header-1 {
@@ -26,6 +26,5 @@
 }
 
 .header-6 {
-  font-size: var(--h6-font-size);
+	font-size: var(--h6-font-size);
 }
-

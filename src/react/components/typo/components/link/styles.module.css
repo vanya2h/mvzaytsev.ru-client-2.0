@@ -1,10 +1,10 @@
 @import "~/css/modules/colors.css";
 
 .link {
-  color: var(--blue);
-  text-decoration: none;
-  cursor: pointer;
-  outline: none;
+	color: var(--blue);
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
 }
 
 .link:hover,

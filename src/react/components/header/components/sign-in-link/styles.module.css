@@ -1,15 +1,16 @@
 @import "~/css/modules/colors.css";
 
-
-.text, .icon {
+.text,
+.icon {
 	vertical-align: middle;
 }
 
-.wrapper, .wrapper:hover {
-	color: var(--black);
+.wrapper,
+.wrapper:hover {
+	color: var(--basic-opposite);
 }
 
 .icon {
+	color: var(--secondary);
 	margin-right: 1rem;
-	color: var(--yellow);
 }

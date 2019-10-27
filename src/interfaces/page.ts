@@ -1,5 +1,5 @@
-import { IRoute } from './route';
+import { IRoute } from "./route";
 
 export interface IPage {
-  routeDescriptor: IRoute
+	routeDescriptor: IRoute
 }

@@ -1,10 +1,10 @@
-import React from 'react';
-import styles from './styles.module.css';
+import React from "react";
+import styles from "./styles.module.css";
 
 export const Aside = (): React.ReactElement => (
-  <aside className={styles.aside}>
+	<aside className={styles.aside}>
     Hello
-  </aside>
+	</aside>
 );
 
-Aside.displayName = 'Aside';
+Aside.displayName = "Aside";
