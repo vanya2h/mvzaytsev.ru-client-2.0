@@ -30,11 +30,15 @@
 	height: var(--checkbox-height);
 	position: relative;
 	background: var(--basic);
-	border: 2px solid var(--secondary);
+	border: 2px solid transparent;
 	border-radius: 30px;
 	cursor: pointer;
 	outline: none;
 	overflow: hidden;
+}
+
+body[data-dark="true"] .checkbox {
+	border-color: color(var(--secondary) w(80%));
 }
 
 .checkbox:focus:not(.checkbox--disabled) {

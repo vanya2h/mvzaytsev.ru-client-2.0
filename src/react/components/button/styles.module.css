@@ -40,8 +40,8 @@
 }
 
 .button:hover {
-	color: var(--basic);
-	background: var(--basic-opposite);
+	color: var(--basic-opposite);
+	background: var(--basic);
 }
 
 .button--primary {

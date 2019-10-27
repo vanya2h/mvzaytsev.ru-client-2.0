@@ -5,27 +5,27 @@ import { LocalStorageClient, StorableKey } from "~/services/local-storage-client
 @provides(AccessibilityService)
 export class AccessibilityService {
 	@observable
-	public blindness: boolean;
+	public dark: boolean;
 
-	public static getBlindness = (localStorage: LocalStorageClient) => {
+	public static getdark = (localStorage: LocalStorageClient) => {
 		try {
-			return JSON.parse(localStorage.getItem(StorableKey.BLINDNESS) || "");
+			return JSON.parse(localStorage.getItem(StorableKey.DARK) || "");
 			// eslint-disable-next-line no-empty
 		} catch (err) {
-			return localStorage.setItem(StorableKey.BLINDNESS, JSON.stringify(false));
+			return localStorage.setItem(StorableKey.DARK, JSON.stringify(false));
 		}
 	};
 
 	public constructor(private readonly localStorage: LocalStorageClient) {
-		this.blindness = AccessibilityService.getBlindness(localStorage);
+		this.dark = AccessibilityService.getdark(localStorage);
 
-		reaction(() => this.blindness, this.handleBlindness);
+		reaction(() => this.dark, this.handledark);
 	}
 
-	private handleBlindness = () => {
+	private handledark = () => {
 		this.localStorage.setItem(
-			StorableKey.BLINDNESS,
-			JSON.stringify(this.blindness),
+			StorableKey.DARK,
+			JSON.stringify(this.dark),
 		);
 	};
 }

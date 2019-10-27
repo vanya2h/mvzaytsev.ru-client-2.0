@@ -17,7 +17,7 @@ import styles from "./styles.module.css";
 export const Header = observer((): React.ReactElement => {
 	const history = useHistory();
 	const accessibilityService = useInjection(AccessibilityService);
-	const { blindness } = accessibilityService;
+	const { dark } = accessibilityService;
 
 	return (
 		<header className={styles.header}>
@@ -25,21 +25,21 @@ export const Header = observer((): React.ReactElement => {
 				<ul className={styles.menu}>
 					<li>
 						<Link to={routes.index}>
-							<Heading className={styles.logo} level={5} as="h1">
+							<Heading className={styles.logo} level={4} as="h1">
 								Максим Зайцев
 							</Heading>
 						</Link>
 					</li>
 					<li>
 						<Checkbox
-							checked={blindness}
+							checked={dark}
 							onChange={(event) => {
 								runInAction(() => {
-									accessibilityService.blindness = (event.target as HTMLInputElement).checked;
+									accessibilityService.dark = (event.target as HTMLInputElement).checked;
 								});
 							}}
 						>
-							Контрастность
+							Темная тема
 						</Checkbox>
 					</li>
 				</ul>
@@ -48,10 +48,10 @@ export const Header = observer((): React.ReactElement => {
 				<Button
 					onClick={() => history.push(routes.signIn)}
 					type="button"
-					design={ButtonDesign.SECONDARY}
+					design={ButtonDesign.PRIMARY}
 					icon={<SignInIcon className={styles.icon} />}
 				>
-					Авторизация
+					Войти
 				</Button>
 			</div>
 		</header>

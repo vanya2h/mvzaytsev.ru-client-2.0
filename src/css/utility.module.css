@@ -1,14 +1,5 @@
 @import "./modules/colors.css";
 
-.bigger {
-	font-size: 106%;
-}
-
-.blindness {
-	color: var(--basic-opposite);
-	background: var(--basic);
-}
-
 .horizontal-menu {
 	display: flex;
 	flex-flow: row wrap;

@@ -1,7 +1,7 @@
 @import "~/css/modules/colors.css";
 
 .link {
-	color: var(--blue);
+	color: var(--primary);
 	cursor: pointer;
 	outline: none;
 	text-decoration: none;
@@ -10,4 +10,8 @@
 .link:hover,
 .link:focus {
 	text-decoration: underline;
+}
+
+body[data-dark="true"] .link {
+	color: var(--basic);
 }

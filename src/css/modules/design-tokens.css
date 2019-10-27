@@ -1,5 +1,5 @@
 :root {
 	--border-radius: 4px;
-	--ui-element-height: 43px;
+	--ui-element-height: 40px;
 	--transition: 0.1s all cubic-bezier(0.25, 0.6, 0.88, 0.6);
 }

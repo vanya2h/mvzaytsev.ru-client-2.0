@@ -1,5 +1,6 @@
 @import "./modules/typography.css";
 @import "./modules/colors.css";
+@import "./utility.module.css";
 
 html {
 	box-sizing: border-box;
@@ -13,12 +14,17 @@ html {
 
 body {
 	font-size: var(--font-size);
-	color: var(--basic-opposite);
+	color: var(--basic);
 	margin: 0;
-	background: var(--basic);
+	background: var(--secondary);
 	font-family: var(--font-family);
 	line-height: var(--line-height);
 	word-wrap: var(--word-wrap);
+}
+
+body[data-dark="true"] {
+	color: var(--basic);
+	background: var(--basic-opposite);
 }
 
 body::before {
