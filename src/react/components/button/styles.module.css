@@ -1,0 +1,54 @@
+@import "~/css/modules/design-tokens.css";
+@import "~/css/modules/colors.css";
+
+.button {
+	height: var(--ui-element-height);
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: var(--basic-opposite);
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	padding: 0 calc(var(--ui-element-height) / 2);
+	background: transparent;
+	border: 0;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	min-width: 64px;
+	outline: none;
+	transition: var(--transition);
+	user-select: none;
+	vertical-align: middle;
+}
+
+.button:disabled {
+	background: #b4b7be;
+	opacity: 0.5;
+}
+
+.button:focus {
+	box-shadow: 0 0 0 3px color(var(--basic-opposite) a(15%));
+}
+
+.button:hover {
+	color: var(--basic);
+	background: var(--basic-opposite);
+}
+
+.button--primary {
+	background: var(--primary);
+}
+
+/* .button--primary:focus {
+
+} */
+
+.button--basic {
+	background: var(--basic);
+}
+
+.button--secondary {
+	color: var(--basic);
+	background: var(--secondary);
+}
