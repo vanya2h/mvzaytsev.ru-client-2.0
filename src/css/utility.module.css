@@ -5,8 +5,8 @@
 }
 
 .blindness {
-	color: var(--black);
-	background: var(--white);
+	color: var(--basic-opposite);
+	background: var(--basic);
 }
 
 .horizontal-menu {
@@ -17,4 +17,3 @@
 .horizontal-menu > * + * {
 	margin-left: 1rem;
 }
-

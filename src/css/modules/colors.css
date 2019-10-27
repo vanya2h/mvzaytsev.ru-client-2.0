@@ -1,6 +1,7 @@
 :root {
-	--black: #24292e;
-	--white: #ffffff;
+	--basic-opposite: #24292e;
+	--basic: #fff;
 	--blue: #2823cc;
-	--yellow: #e4d7af;
- }
+	--primary: #ffde03;
+	--secondary: #0228ff;
+}

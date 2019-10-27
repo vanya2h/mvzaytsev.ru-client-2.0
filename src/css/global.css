@@ -8,48 +8,47 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
+	font-size: var(--font-size);
+	color: var(--basic-opposite);
 	margin: 0;
-
+	background: var(--primary);
 	font-family: var(--font-family);
 	line-height: var(--line-height);
-	font-size: var(--font-size);
-	background: color(var(--yellow) a(5%));
-	color: var(--black);
 	word-wrap: var(--word-wrap);
 }
 
-body:before {
-  content: "Mobile";
-  display: none;
-  visibility: hidden;
+body::before {
+	display: none;
+	content: "Mobile";
+	visibility: hidden;
 }
 
 @media (--mini-tablet) {
-  body:before {
-    content: "--mini-tablet";
-  }
+	body::before {
+		content: "--mini-tablet";
+	}
 }
 
 @media (--tablet) {
-  body:before {
-    content: "--tablet";
-  }
+	body::before {
+		content: "--tablet";
+	}
 }
 
 @media (--desktop) {
-  body:before {
-    content: "--desktop";
-  }
+	body::before {
+		content: "--desktop";
+	}
 }
 
 @media (--large) {
-  body:before {
-    content: "--large";
-  }
+	body::before {
+		content: "--large";
+	}
 }
 
 @-webkit-keyframes autofill {
@@ -60,11 +59,12 @@ body:before {
 }
 
 input:-webkit-autofill {
-	-webkit-animation-name: autofill;
 	-webkit-animation-fill-mode: both;
+	-webkit-animation-name: autofill;
 }
 
-ul, ol {
+ul,
+ol {
 	margin: 0;
 	list-style-type: none;
 }
