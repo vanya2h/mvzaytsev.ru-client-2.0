@@ -5,7 +5,6 @@ const appNamespace = "mvzaytsev";
 const getNamespacedKey = (userKey: string): string => `${appNamespace}:${userKey}`;
 
 export enum StorableKey {
-	FONT_SIZE = "FONT_SIZE",
 	BLINDNESS = "BLINDNESS"
 }
 

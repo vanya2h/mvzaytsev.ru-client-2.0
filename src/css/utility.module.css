@@ -12,8 +12,14 @@
 .horizontal-menu {
 	display: flex;
 	flex-flow: row wrap;
+	padding: 0;
+	margin: 0;
 }
 
-.horizontal-menu > * + * {
-	margin-left: 1rem;
+.horizontal-menu > * {
+	margin-right: 1rem;
+}
+
+.horizontal-menu > *:last-child {
+	margin-right: 0;
 }

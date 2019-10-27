@@ -9,13 +9,13 @@
 	color: var(--basic-opposite);
 	display: flex;
 	flex-flow: row;
+	justify-content: center;
 	align-items: center;
 	padding: 0 calc(var(--ui-element-height) / 2);
 	background: transparent;
 	border: 0;
 	border-radius: var(--border-radius);
 	cursor: pointer;
-	min-width: 64px;
 	outline: none;
 	transition: var(--transition);
 	user-select: none;
@@ -27,7 +27,15 @@
 	opacity: 0.5;
 }
 
-.button:focus {
+.button--round {
+	width: var(--ui-element-height);
+	height: var(--ui-element-height);
+	padding: 0;
+	border-radius: 100%;
+}
+
+.button:focus,
+.button--active {
 	box-shadow: 0 0 0 3px color(var(--basic-opposite) a(15%));
 }
 
@@ -40,10 +48,6 @@
 	background: var(--primary);
 }
 
-/* .button--primary:focus {
-
-} */
-
 .button--basic {
 	background: var(--basic);
 }
@@ -51,4 +55,8 @@
 .button--secondary {
 	color: var(--basic);
 	background: var(--secondary);
+}
+
+.icon {
+	margin-right: 0.75rem;
 }

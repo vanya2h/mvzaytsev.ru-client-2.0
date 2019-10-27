@@ -1,10 +1,8 @@
-import { IRoute } from "~/interfaces/route";
-import { IndexPage } from "~/react/pages";
-
-export const routes: IRoute[] = [
-	{
-		path: "/",
-		component: IndexPage,
-		key: "index",
-	},
-];
+export const routes = {
+	index: "/",
+	post: "/post/:id",
+	posts: "/posts",
+	page: "/page/:id",
+	signIn: "/sign-in",
+	signUp: "/sign-up",
+};

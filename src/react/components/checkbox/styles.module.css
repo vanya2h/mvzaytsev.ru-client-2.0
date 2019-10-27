@@ -1,0 +1,105 @@
+@import "~/css/modules/colors.css";
+
+:root {
+	--checkbox-width: 48px;
+	--checkbox-height: 24px;
+	--gap: 4px;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+}
+
+.hidden-checkbox-input {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.checkbox {
+	width: var(--checkbox-width);
+	height: var(--checkbox-height);
+	position: relative;
+	background: var(--basic);
+	border: 2px solid var(--secondary);
+	border-radius: 30px;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+}
+
+.checkbox:focus:not(.checkbox--disabled) {
+	border-color: color(var(--secondary) w(50%));
+}
+
+.checkbox.checkbox--error {
+	border-color: var(--red);
+}
+
+.dot {
+	width: calc(var(--checkbox-height) - (var(--gap) * 2) - 2px);
+	height: calc(var(--checkbox-height) - (var(--gap) * 2) - 2px);
+	position: absolute;
+	z-index: 10;
+	left: var(--gap);
+	top: calc(var(--gap) - 1px);
+	background: var(--secondary);
+	border-radius: 100%;
+	transition: 0.2s all ease-in-out;
+}
+
+.checkbox.checkbox--error .dot {
+	background: var(--red);
+}
+
+.checkbox.checkbox--error:focus:not(.checkbox--disabled) {
+	border-color: color(var(--red) w(80%));
+}
+
+.checkbox.checkbox--active {
+	background: var(--secondary);
+	border-color: var(--secondary);
+}
+
+.checkbox.checkbox--active:focus:not(.checkbox--disabled) {
+	border-color: color(var(--secondary) w(80%));
+}
+
+.checkbox.checkbox--active .dot {
+	background: var(--basic);
+	transform: translateX(calc(var(--checkbox-width) - var(--checkbox-height)));
+}
+
+.checkbox.checkbox--disabled {
+	border-color: color(var(--grey) a(20%));
+	cursor: not-allowed;
+}
+
+.checkbox.checkbox--disabled .dot {
+	background: color(var(--grey) a(20%));
+}
+
+.checkbox.checkbox--disabled.checkbox--active .dot {
+	background: color(var(--basic) a(80%));
+}
+
+.checkbox.checkbox--error.checkbox--active {
+	background: var(--red);
+}
+
+.checkbox.checkbox--error.checkbox--active .dot {
+	background: var(--basic);
+}
+
+.text {
+	margin-left: 0.75rem;
+}
