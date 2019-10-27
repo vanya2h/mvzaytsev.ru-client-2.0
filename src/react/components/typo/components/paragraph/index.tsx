@@ -14,7 +14,7 @@ export const Paragraph = ({
 	...rest
 }: IParagraphProps): React.ReactElement => (
 	<p
-		className={classnames(styles.paragraph, className, { [styles["paragraph--light"]]: light })}
+		className={classnames(className, { [styles["paragraph--light"]]: light })}
 		{...rest}
 	>
 		{children}

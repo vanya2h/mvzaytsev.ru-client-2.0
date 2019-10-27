@@ -1,0 +1,13 @@
+.jumbotron {
+	display: flex;
+	flex-flow: row;
+}
+
+.photo {
+	width: 100%;
+	max-width: 300px;
+}
+
+.content {
+	margin-left: 2rem;
+}

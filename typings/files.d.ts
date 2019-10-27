@@ -14,6 +14,11 @@ declare module "*.woff2" {
 	export default path;
 }
 
+declare module "*.png" {
+	const path: string;
+	export default path;
+}
+
 declare namespace Common {
   type ViewportType = "Mobile" | "MiniTablet" | "Tablet" | "Desktop" | "Large";
   type Viewport = Record<ViewportType, [number, number]>;

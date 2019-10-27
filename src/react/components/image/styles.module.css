@@ -1,0 +1,13 @@
+@import "~/css/modules/design-tokens.css";
+
+.image {
+	border-radius: var(--border-radius);
+}
+
+.image--square {
+	border-radius: 0;
+}
+
+.image--cover {
+	object-fit: cover;
+}
